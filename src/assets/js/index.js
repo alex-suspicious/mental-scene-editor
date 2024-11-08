@@ -2,7 +2,7 @@
 const app = new PIXI.Application({
     width: window.innerWidth,
     height: window.innerHeight,
-    backgroundColor: 0x1099bb
+    backgroundColor: 0xFFFFFF
 });
 $('#scene-renderer').append(app.view);
 
@@ -11,7 +11,7 @@ window.addEventListener('resize', () => {
 });
 
 // Load a texture and add a sprite
-PIXI.Assets.load('https://pixijs.io/examples/examples/assets/bunny.png').then(texture => {
+PIXI.Assets.load('https://mentalgames.org/asset/images/logo.png').then(texture => {
     const bunny = new PIXI.Sprite(texture);
 
     // Center the sprite's anchor point
